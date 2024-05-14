@@ -160,6 +160,11 @@ html {
   color: #FFFFFF;
   margin-top: 18px;
   cursor: pointer;
+  transition: 0.9s;
+}
+
+.projects button:hover {
+  transform: scale(1.1);
 }
 
 .projects img {
@@ -198,11 +203,9 @@ html {
 }
 
 .contact input {
-
   display: block;
   padding: 4px;
   margin: 15px;
-
 }
 
 .contact button {
@@ -218,8 +221,26 @@ html {
   cursor: pointer;
   transition: 0.9s;
 }
+
 .contact button:hover {
   transform: scale(1.1);
+}
+
+.contact input:focus::placeholder {
+  color: transparent;
+}
+
+#message {
+  margin: 5px;
+  width: 250px;  /* Altura mínima da caixa de mensagem */
+  height: 200px; /* Altura máxima da caixa de mensagem */
+  resize: none;
+  padding: 6px;
+  padding-bottom: 170px;
+}
+
+#message:focus::placeholder {
+  color: transparent;
 }
 
 .contact label {
