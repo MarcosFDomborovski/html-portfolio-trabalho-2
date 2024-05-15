@@ -19,7 +19,7 @@ html {
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: sticky;
   top: 0;
   z-index: 9;
@@ -314,6 +314,36 @@ footer p {
 
 
 /* RESPONSIVIDADE */
+@media (max-width:400px) {
+
+  .nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+
+  .nav-list {
+    display:flex;
+    list-style: none;
+    margin: 0;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .nav-list li {
+    flex: none;
+    width: 75px;
+    padding: 50px;
+    margin-left:-20px;
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 2px;
+    width: 75px;
+    
+  }
+}
 
 @media (max-width: 1050px) {
 
